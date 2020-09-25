@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+    int magic;
+    int number;
+    magic=rand()%100+1;
+    printf("请输入：\n");
+    scanf("%d",&number);
+    if(number>magic)
+    {
+        printf("猜大了");
+    }
+    else if(number<magic)
+    {
+        printf("猜小了");
+    }
+    if(number==magic)
+    {
+        printf("猜对了");
+    }
+    return 0;
+}
